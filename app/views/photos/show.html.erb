@@ -1,0 +1,8 @@
+<h1>Showpage</h1>
+
+<img src="<%= @var.photo %>" />
+<p>Caption <%= @var.caption %></p>
+
+<%= link_to "edit", edit_photo_path(@var.id) %>
+
+<%= link_to "delete", photo_path(@var.id), {:method => :delete, :data => {:confirm =>"Are you sure"}}%>
